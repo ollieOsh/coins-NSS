@@ -38,7 +38,7 @@ function coinCounter (cash) {
   return coinPurse;
 }
 
-document.getElementById('myForm').onsubmit = function() {
+document.getElementById('submit').onclick = function() {
   var money = document.getElementById('moneys'),
       cash = Math.floor(money.value * 100),
       coins = coinCounter(cash);
